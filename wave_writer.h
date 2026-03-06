@@ -1,3 +1,17 @@
+/*
+ * Modified by Vadim Grigoruk, 25 Nov 2020.
+ *
+ * Changes:
+ *  - Updated declarations to match Windows file-opening changes in
+ *    wave_writer.c.
+ *
+ * Original code by Shay Green.
+ *
+ * This file remains licensed under the GNU Lesser General Public
+ * License, version 2.1 or later. See the project LICENSE file.
+ */
+
+
 /* Simple wave sound file writer for use in demo programs. */
 
 #ifndef WAVE_WRITER_H
