@@ -16,6 +16,19 @@ details. You should have received a copy of the GNU Lesser General Public
 License along with this module; if not, write to the Free Software Foundation,
 Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA */
 
+/*
+ * Modified by Vadim Grigoruk, 25 Nov 2020.
+ *
+ * Changes:
+ *  - Updated declarations to match Windows file-opening changes in
+ *    wave_writer.c.
+ *
+ * Original code by Shay Green.
+ *
+ * This file remains licensed under the GNU Lesser General Public
+ * License, version 2.1 or later. See the project LICENSE file.
+ */
+
 enum { sample_size = 2 };
 
 static FILE* file;
