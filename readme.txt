@@ -1,3 +1,22 @@
+Notice about modifications  
+
+This repository contains code originally written by Shay Green and
+distributed as part of the blip_buf project under the GNU Lesser
+General Public License version 2.1 or later.  
+
+On 25 Nov 2020, Vadim Grigoruk modified the wave_writer example files
+to improve Windows compatibility by adding wide-character file opening
+support for MSVC and MinGW builds.  
+
+These changes introduce a wrapper around file opening that allows
+UTF-8 filenames to be opened using Windows wide-character APIs.  
+
+All modifications remain licensed under the same LGPL license as the
+original code.  
+
+
+
+
 blip_buf $vers: Band-Limited Audio Buffer
 -----------------------------------------
 Blip_buf is a small waveform synthesis library meant for use in classic
@@ -60,3 +79,4 @@ tests/                Unit tests (build with "make test")
 
 -- 
 Shay Green <gblargg@gmail.com>
+
