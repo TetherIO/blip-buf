@@ -20,8 +20,11 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA */
  * Modified by Vadim Grigoruk, 25 Nov 2020.
  *
  * Changes:
- *  - Updated declarations to match Windows file-opening changes in
- *    wave_writer.c.
+ *  - Added Windows-specific wide-character file opening support for
+ *    MSVC and MinGW builds.
+ *  - Introduced UTF-8 to wide-character conversion helper for filenames.
+ *  - Added ww_fopen() wrapper using _wfopen() on Windows.
+ *  - Replaced direct fopen() usage with ww_fopen().
  *
  * Original code by Shay Green.
  *
